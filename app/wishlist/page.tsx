@@ -1,0 +1,1 @@
+export default function Wishlist(){return <div className="container-lux py-32"><p className="text-xs uppercase tracking-[.18em] opacity-45">Saved pieces</p><h1 className="serif mt-3 text-6xl">Wishlist.</h1><p className="mt-6 opacity-55">Sign in to keep your considered selections across devices.</p></div>}
