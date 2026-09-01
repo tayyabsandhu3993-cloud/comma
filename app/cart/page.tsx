@@ -1,0 +1,1 @@
+import CartClient from "@/components/CartClient"; export default function Cart(){return <CartClient/>}
