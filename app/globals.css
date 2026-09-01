@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #11100e;
+  --paper: #f6f3ee;
+  --ivory: #fbfaf7;
+  --gold: #b89558;
+  --line: rgba(17,16,14,.12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ivory); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+::selection { background: #11100e; color: #fff; }
+
+.serif { font-family: Georgia, "Times New Roman", serif; }
+.container-lux { width: min(1280px, calc(100% - 48px)); margin: 0 auto; }
+.gold { color: var(--gold); }
+.no-scrollbar::-webkit-scrollbar { display:none; }
+.no-scrollbar { scrollbar-width:none; }
+.reveal { opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease; }
+.reveal.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  .reveal { opacity:1; transform:none; }
+}
